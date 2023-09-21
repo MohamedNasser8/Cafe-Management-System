@@ -1,7 +1,9 @@
 package com.inn.cafe.restImpl;
 
+import com.inn.cafe.constents.CafeConstants;
 import com.inn.cafe.rest.UserRest;
 import com.inn.cafe.service.UserService;
+import com.inn.cafe.serviceImpl.UserServiceImpl;
 import com.inn.cafe.utils.CafeUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -13,15 +15,15 @@ import java.util.Map;
 @RestController
 public class UserRestImpl implements UserRest {
     @Autowired
-    UserService userService;
+    UserServiceImpl userServiceImpl;
 
     @Override
     public ResponseEntity<String> signUp(Map<String, String> requestMap) {
         try {
-            userService.signUp(requestMap);
+           return userServiceImpl.signUp(requestMap);
         } catch (Exception ex) {
             ex.printStackTrace();
         }
-    return CafeUtils.getResponseEntity("",HttpStatus.INTERNAL_SERVER_ERROR);
+    return CafeUtils.getResponseEntity(CafeConstants.SOMETHING_WENT_WRONG,HttpStatus.INTERNAL_SERVER_ERROR);
     }
 }
