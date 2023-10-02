@@ -197,9 +197,13 @@ public class UserServiceImpl implements UserService {
     public ResponseEntity<String> forgotPassword(Map<String, String> requestMap) {
         try {
             Optional<User> user = userDao.findByEmailId(requestMap.get("email"));
-            if (user.isPresent())
+            if (user.isPresent()) {
                 emailUtils.forgetMail(user.get().getEmail(), "Credentials by Cafe Management System", user.get().getPassword());
-            return CafeUtils.getResponseEntity("Check your mail for Credentials", HttpStatus.OK);
+                return CafeUtils.getResponseEntity("Check your mail for Credentials", HttpStatus.OK);
+            }else{
+                return CafeUtils.getResponseEntity("Wrong With Your Credentials.",HttpStatus.BAD_REQUEST);
+            }
+
         } catch (Exception ex) {
             ex.printStackTrace();
         }
