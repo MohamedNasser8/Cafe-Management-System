@@ -10,17 +10,19 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
+import org.springframework.web.servlet.config.annotation.CorsRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 
 @Configuration
 @EnableWebSecurity
 @EnableMethodSecurity
-public class SecurityConfig {
+public class SecurityConfig implements WebMvcConfigurer {
     @Autowired
     JwtFilter jwtFilter;
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-        http.csrf(csrf -> csrf.disable()).authorizeRequests(authorize -> authorize
+        http.cors(Customizer.withDefaults()).csrf(csrf -> csrf.disable()).authorizeRequests(authorize -> authorize
                         .requestMatchers(
                                 "/user/login",
                                 "/user/signup",
@@ -36,4 +38,5 @@ public class SecurityConfig {
 
         return http.build();
     }
+
 }

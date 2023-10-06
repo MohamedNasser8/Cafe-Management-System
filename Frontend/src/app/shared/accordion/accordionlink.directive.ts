@@ -16,6 +16,7 @@ export class AccordionLinkDirective implements OnInit, OnDestroy {
   @Input()
   public group: any;
 
+
   @HostBinding('class.selected')
   @Input()
   get selected(): boolean {
@@ -29,7 +30,7 @@ export class AccordionLinkDirective implements OnInit, OnDestroy {
     }
   }
 
-  protected _selected: boolean=false;
+  protected _selected: boolean = false;
   protected nav: AccordionDirective;
 
   constructor(@Inject(AccordionDirective) nav: AccordionDirective) {
