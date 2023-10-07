@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { AuthService } from './auth.service';
-import { ActivatedRoute, ActivatedRouteSnapshot, Router } from '@angular/router';
+import { ActivatedRouteSnapshot, Router } from '@angular/router';
 import { SnackbarService } from './snackbar.service';
 import jwtDecode from 'jwt-decode';
 import { GlobalConstants } from '../shared/global-constants';
