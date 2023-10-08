@@ -1,6 +1,6 @@
 <mat-card>
   <b><span>Manage Product</span></b>
-  <button mat-flat-button color="primary" class="float-right" (click)="handleSubmitAction()">
+  <button mat-flat-button color="primary" class="float-right" (click)="handleAddAction()">
     <mat-icon>add_circle</mat-icon>
     Add Product
   </button>
@@ -41,7 +41,7 @@
         <button mat-icon-button color="primary" matTooltip="Edit" (click)="handleEditAction(element)">
           <mat-icon>edit</mat-icon>
         </button>
-        <button mat-icon-button color="primary" matTooltip="Edit" (click)="handleDeleteAction(element)">
+        <button mat-icon-button color="primary" matTooltip="Delete" (click)="handleDeleteAction(element)">
           <mat-icon>delete</mat-icon>
         </button>
         <mat-slide-toggle (change)="onChange($event.checked,element.id)" matTooltip="Activate or Deactivate Product"
