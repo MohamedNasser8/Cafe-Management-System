@@ -1,4 +1,4 @@
-# <img  align="center" width= 65px  src="https://cdn.dribbble.com/users/1490076/screenshots/6436878/game-store_coffee-house_animated8002.gif"> Cafe System
+# <img  align="center" width= 65px  src="https://cdn.dribbble.com/users/1490076/screenshots/6436878/game-store_coffee-house_animated8002.gif"> Cafe Managment System
 
 <div align="center">
 
@@ -87,37 +87,31 @@ ng serve
 
 <table  >
 <tr >
-<th width=20% >Feature</th>
+<th width=30% >Feature</th>
 <th >Description</th>
 </tr>
 <tr>
-<td> 🔷 Search bar</td>
-<td> You can use search bar for searching  your favourite characters.</td>
+<td> 🔷 Registration </td>
+<td> You can login or sign up as a User.</td>
 </tr>
 <tr>
-<td> 🔶 Pagination</td>
-<td>In total there are 800+ characters. In order to display and manage all of these characters, there is a pagination system where each page will display 20 characters.</td>
+<td>🔷  Manage Categories </td>
+<td>Here Amins only can add, edit or categories.</td>
 </tr>
 <tr>
-<td> 🔷 Filters</td>
-<td>There are lots of labels present in the API. Using them, you can filter  data and search for exactly what you need.</td>
+<td> 🔷 Manage Products</td>
+<td>Here Amins only can add, edit or remove products for some categories</td>
 </tr>
 <tr>
-<td> 🔶 Routing</td>
-<td>You can change your page by using navbar
-<ul>
-<br>
-<li>Characters</li>
-<li>Episodes</li>
-<li>Location</li>
-</ul>
+<td> 🔶 Manage Orders</td>
+<td>Here Amins and Users can create orders and get Bills downloaded as pdf</td>
 </td>
-</tr>
 <tr>
-<td> 🔷 Dynamic Routing</td>
-<td>You can learn more about a character when you click on it.
-</td>
+<td> 🔶 View Orders</td>
+<td>Here Amins and Users can preview previous orders</td>
+</td> 
 </tr>
+
 </table>
 
 <hr style="background-color: #4b4c60"></hr>
@@ -126,7 +120,7 @@ ng serve
 ## <img  align= center width= 70px height =70px src="https://img.genial.ly/5f91608064ad990c6ee12237/bd7195a3-a8bb-494b-8a6d-af48dd4deb4b.gif?genial&1643587200063"> Demo
 
 <div  align="center">
-<video src="https://user-images.githubusercontent.com/71986226/189550759-836e8ef1-9d0e-4721-a766-914e4c721f6f.mp4">
+<video src="">
 </video> 
 </div>
 
