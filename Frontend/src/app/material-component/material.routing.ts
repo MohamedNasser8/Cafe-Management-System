@@ -3,6 +3,7 @@ import { ManageCategoryComponent } from './manage-category/manage-category.compo
 import { RouteGaurdService } from '../services/route-gaurd.service';
 import { ManageProductComponent } from './manage-product/manage-product.component';
 import { ManageOrderComponent } from './manage-order/manage-order.component';
+import { ViewBillComponent } from './view-bill/view-bill.component';
 
 
 export const MaterialRoutes: Routes = [
@@ -18,6 +19,11 @@ export const MaterialRoutes: Routes = [
   },
   {
     path: 'order', component: ManageOrderComponent,
+    canActivate: [RouteGaurdService],
+    data: { expectedRole: ['admin', 'user'] }
+  },
+  {
+    path: 'bill', component: ViewBillComponent,
     canActivate: [RouteGaurdService],
     data: { expectedRole: ['admin', 'user'] }
   }

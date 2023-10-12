@@ -18,6 +18,6 @@ public interface BillRest {
     @PostMapping("getPdf")
     ResponseEntity<byte[]>getPdf(@RequestBody Map<String,Object> requestMap);
 
-    @DeleteMapping("delete/{id}")
+    @PostMapping("delete/{id}")
     ResponseEntity<String>deleteBill(@PathVariable("id") Integer id);
 }

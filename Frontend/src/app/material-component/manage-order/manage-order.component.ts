@@ -120,7 +120,7 @@ export class ManageOrderComponent {
     var productName = this.dataSource.find((e: { id: number }) => e.id === data.product.id)
     if (productName === undefined) {
       this.totalAmount += data.total
-      this.dataSource.push({ id: data.product.id, name: data.product.name, category: data.product.category, quantity: data.quantity, price: data.price, total: data.total })
+      this.dataSource.push({ id: data.product.id, name: data.product.name, category: data.category.name, quantity: data.quantity, price: data.price, total: data.total })
       this.dataSource = [...this.dataSource]
       this.snackbarService.openSnackBar(GlobalConstants.productAdded, "success")
     } else {
@@ -137,6 +137,7 @@ export class ManageOrderComponent {
   submitAction() {
     var formData = this.manageOrderForm.value
     formData = { ...formData, productDetails: JSON.stringify(this.dataSource), totalAmount: this.totalAmount }
+    console.log(formData);
 
     this.ngxService.start()
     this.billService.generateReport(formData).subscribe((res: any) => {
