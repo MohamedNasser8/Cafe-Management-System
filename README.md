@@ -57,15 +57,16 @@ Build **Cafe Management System** website by using **Angular JS & Spring Boot**</
 <ol>
 <li>Clone the repository.
 
-<br>
-
 ```
 git clone https://github.com/MohamedNasser8/Cafe-Management-System
 ```
-
 </li>
-<li>Open terminal</li>
+
+**ForntEnd Part**
+<li>Open Forntend project then open terminal</li>
+<br>
 <li>
+
 
 ```
 npm install
@@ -77,8 +78,31 @@ npm install
 ```
 ng serve
 ```
-
 </li>
+
+**BackEnd Part**
+
+<li>
+
+```
+First you need to install all dependencies in pom.xml.
+```
+</li>
+
+<li>
+
+```
+Open src folder then main then java folder then .
+```
+</li>
+
+<li>
+
+```
+ng serve
+```
+</li>
+
 </ol>
 <hr style="background-color: #4b4c60"></hr>
 <a id ="Features"></a>
