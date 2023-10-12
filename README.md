@@ -28,23 +28,26 @@
 <ul>
  <li>
 
-Build **Rick and Morty** website by using **React JS**</li>
+Build **Cafe Management System** website by using **Angular JS & Spring Boot**</li>
 
  <li> The Project is built by
  
  <ul>
-    <li> React Hooks (useState, useEffect) </li>
-    <li> React Components </li>
-    <li> Fetch API </li>
-    <li> Bootstrap and Scss - for styling </li>
-    <li> Pagination </li>
-    <li>Search bar </li>
-    <li>Data Filtering </li>
-    <li> Dynamic Routing </li>
+    <li> AngularJS </li>
+    <li> Angular Routing </li>
+    <li> Angular Material </li>
+    <li> Angular Guards </li>
+    <li> Angular Interceptors </li>
+    <li>Spring Boot </li>
+    <li> MYSQL </li>
+  <li> Hibernate </li>
+  <li> Spring Security </li>
+    <li> Jwt </li>
+    <li> Java Mail Sender </li>
+    <li> Pdf Writer </li>
    </ul>
    </li>
 </ul>
-<li>Let's Go visit <a href="https://snazzy-meerkat-1bf0dc.netlify.app/">Rick & Morty Wiki
 </li>
 <hr style="background-color: #4b4c60"></hr>
 <a id = "Started"></a>
@@ -57,7 +60,7 @@ Build **Rick and Morty** website by using **React JS**</li>
 <br>
 
 ```
-git clone https://github.com/EslamAsHhraf/Rick-and-Morty
+git clone https://github.com/MohamedNasser8/Cafe-Management-System
 ```
 
 </li>
@@ -72,7 +75,7 @@ npm install
 <li>
 
 ```
-npm start
+ng serve
 ```
 
 </li>
@@ -135,7 +138,7 @@ npm start
 <br>
 <table >
   <tr>
-        <td align="center"><a href="https://github.com/MohamedNasser*"><img src="https://avatars.githubusercontent.com/u/71986226?v=4" width="150px;" alt=""/><br /><sub><b>Mohamed Nasser</b></sub></a><br /></td>
+        <td align="center"><a href="https://github.com/MohamedNasser*"><img src="https://avatars.githubusercontent.com/u/66921605?v=4" width="150px;" alt=""/><br /><sub><b>Mohamed Nasser</b></sub></a><br /></td>
   </tr>
 </table>
 
