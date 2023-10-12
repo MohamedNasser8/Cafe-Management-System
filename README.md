@@ -92,14 +92,14 @@ First you need to install all dependencies in pom.xml.
 <li>
 
 ```
-Open src folder then main then java folder then .
+Open src folder then main then java folder then CafeManagementSystemApplication.java.
 ```
 </li>
 
 <li>
 
 ```
-ng serve
+Run the CafeManagementSystemApplication class.
 ```
 </li>
 
