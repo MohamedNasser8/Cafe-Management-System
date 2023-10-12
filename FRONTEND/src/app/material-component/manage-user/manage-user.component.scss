@@ -1,0 +1,15 @@
+.float-right {
+  float: right;
+}
+
+mat-card {
+  padding: 20px;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+::ng-deep .highlight {
+  color: white;
+  background: #673Ab7;
+}
