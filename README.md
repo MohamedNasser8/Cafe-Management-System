@@ -83,24 +83,21 @@ ng serve
 **BackEnd Part**
 
 <li>
-
-```
+ 
 First you need to install all dependencies in pom.xml.
-```
+<br>
 </li>
 
 <li>
-
-```
+ 
 Open src folder then main then java folder then CafeManagementSystemApplication.java.
-```
+<br>
 </li>
 
 <li>
 
-```
 Run the CafeManagementSystemApplication class.
-```
+<br>
 </li>
 
 </ol>
