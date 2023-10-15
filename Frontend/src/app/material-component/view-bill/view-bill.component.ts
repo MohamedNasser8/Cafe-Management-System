@@ -75,6 +75,7 @@ export class ViewBillComponent {
     dialogRef.componentInstance.onEmitStatusChange.subscribe((res: any) => {
       this.ngxSevice.start()
       this.deleteBill(element.id)
+      this.dialog.closeAll()
     })
   }
 

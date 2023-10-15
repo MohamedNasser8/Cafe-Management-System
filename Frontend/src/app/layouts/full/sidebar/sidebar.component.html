@@ -1,6 +1,5 @@
 <mat-nav-list appAccordion>
-  <mat-list-item appAccordionLink *ngFor="let menuitem of menuItems.getMenuItems()" routerLinkActive="selected"
-    group="{{menuitem.state}}">
+  <mat-list-item appAccordionLink *ngFor="let menuitem of items" routerLinkActive="selected" group="{{menuitem.state}}">
     <a style=" height: fit-content;
     display: flex;
     align-items: center;" appAccordionToggle [routerLink]="['/cafe/',menuitem.state]"

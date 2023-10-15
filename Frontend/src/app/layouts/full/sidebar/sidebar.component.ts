@@ -12,7 +12,7 @@ export class AppSidebarComponent implements OnDestroy {
   userRole: any
   token: any = localStorage.getItem('token');
   tokenPayload: any;
-
+  items: any
 
   private _mobileQueryListener: () => void;
 
@@ -26,6 +26,11 @@ export class AppSidebarComponent implements OnDestroy {
     this.mobileQuery = media.matchMedia('(min-width: 768px)');
     this._mobileQueryListener = () => changeDetectorRef.detectChanges();
     this.mobileQuery.addListener(this._mobileQueryListener);
+  }
+  ngOnInit(): void {
+    this.items = this.menuItems.getMenuItems().filter(item => item.role === this.userRole || item.role === "")
+    console.log('items' + this.items.length);
+
   }
 
   ngOnDestroy(): void {
